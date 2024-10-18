@@ -1,0 +1,46 @@
+.corpo {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh !important; /* Força a aplicação da margem */
+    
+}
+.foto{
+ 
+    height: 65vh;
+    width: 85vh;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0; /* Remover padding extra */
+    
+
+}
+
+.background-verde{
+    
+    background-color: #acf464;
+    width:85vh;
+    height: 65vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    border-radius: 0px 10px 10px 0px; /* Ajustei os cantos para se ajustar corretamente */
+    padding: 0; /* Remover padding extra */
+    
+}
+
+.fonte-titulo{
+    font-size: 10vh;
+    padding: 5vh;
+}
+
+.botao{
+    width: 40vh;
+    background-color: #acf464  !important;
+    border: 2px solid #3030309d  !important;
+    border-radius: 50px  !important;
+}
+
+.botao:hover{
+    background-color: #0d0d0d9d !important;
+    transition: 0.2s  !important;
+}

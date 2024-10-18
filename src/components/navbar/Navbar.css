@@ -1,0 +1,33 @@
+.background{
+    background-color: #ffffff;
+}
+
+.fonte{
+    color: #303030; 
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.fonte:hover{
+    color: #3030309d;
+    text-decoration: underline;
+}
+
+.logo{
+    height: 10vh;
+    width: 10vh;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+
+.display-f{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    margin-top: 5vh;
+    display: flex;
+    gap: 5vh;
+    margin-right: 10vh;
+}
