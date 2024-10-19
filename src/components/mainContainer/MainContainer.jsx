@@ -10,11 +10,11 @@ const MainContainer =()=>{
         <div className='container '>
         <div className='row corpo'>
       
-          <div className='col-md-6'>
+          <div className='col-lg-6'>
             <Image className='foto' src={foto}  alt="Descrição da imagem" />
           </div>
         
-          <div className='col-md-6 background-verde'>
+          <div className='col-lg-6 background-verde'>
             <h4 className='fonte-titulo '>Sua Marca fala mais que mil palavras!</h4>
             <Button className='botao'>Vamos transformar sua marca?</Button>
           </div>

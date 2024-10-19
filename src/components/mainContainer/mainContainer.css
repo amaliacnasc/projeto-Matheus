@@ -1,13 +1,15 @@
 .corpo {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 5vh !important; /* Força a aplicação da margem */
     
 }
 .foto{
  
-    height: 65vh;
-    width: 85vh;
+    height: 75vh;
+    width: 80vh;
     border-radius: 10px 0px 0px 10px;
     padding: 0; /* Remover padding extra */
     
@@ -17,8 +19,8 @@
 .background-verde{
     
     background-color: #acf464;
-    width:85vh;
-    height: 65vh; 
+    width:80vh;
+    height: 75vh; 
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza o conteúdo verticalmente */
@@ -38,6 +40,7 @@
     background-color: #acf464  !important;
     border: 2px solid #3030309d  !important;
     border-radius: 50px  !important;
+    padding: 3vh !important;
 }
 
 .botao:hover{

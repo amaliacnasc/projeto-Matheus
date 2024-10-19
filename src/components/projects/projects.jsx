@@ -9,7 +9,7 @@ import projeto3 from '../../assets/img/projeto3.avif';
 
 export default function Projects() {
     return (
-        <div className="corpo">
+        <div className="corpo-projetos">
             <div className="projetos">
                 <ProjectCard 
                     src={projeto1} 

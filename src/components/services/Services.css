@@ -1,0 +1,59 @@
+.corpo-servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh !important; /* Força a aplicação da margem */
+}
+
+.conteudo{
+    
+    justify-content: center;
+    align-items: center;
+    width: 160vh;
+    margin: 0 auto;
+}
+.titulo{
+    font-size: 5vh;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-item {
+    font-size: 3vh;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content:baseline; /* Adiciona espaço automático entre o texto e a seta */
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
+}
+
+.titulo-item svg {
+    margin-left: 10px; /* Adiciona o espaçamento à esquerda da seta */
+}
+.texto-item{
+    font-size: 2vh;
+    text-align: justify;
+}
+
+.texto-item-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.texto-item-container.open {
+    max-height: 1000px; /* Um valor alto o suficiente para o conteúdo expandido */
+    opacity: 1;
+}
+
+.texto-item-container.closed {
+    max-height: 0;
+    opacity: 0;
+}

@@ -1,27 +1,23 @@
-.corpo {
+.corpo-projetos {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 160vh;
     margin: 0 auto;
 }
-
 .projetos {
     display: flex;
     gap: 1rem;
-    max-width: 70vw;
+    max-width: 70vw; /* Mantém a mesma largura */
+    margin: 0 auto;  /* Centraliza o container */
     margin-top: 5vh;
 }
 
 .image-card {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 60vh;
-    border-radius: 10px;
-    cursor: pointer; /* Indicativo de que é clicável */
+    flex: 1;
+    max-width: calc(100% / 3 - 1.5rem); /* Aumenta o espaçamento lateral dos cards */
+    height: auto;
 }
-
 .card-img {
     width: 100%;
     height: 100%;
