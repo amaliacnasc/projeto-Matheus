@@ -1,0 +1,100 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* Estilos para telas grandes e médias */
+@media (min-width: 768px) {
+    .foto {
+        float: left;
+        width: 40%;
+        margin-right: 20px;
+    }
+
+    .col-lg-10 h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .col-lg-10 p {
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    /* Esconde o botão "Ler mais" em telas grandes e médias */
+    .ler-mais {
+        display: none;
+    }
+
+    /* Mostra o conteúdo completo */
+    .hidden-content {
+        display: block;
+    }
+    .botao-about{
+        width: 50vh;
+        background-color: #acf464  !important;
+        border: 2px solid #3030309d  !important;
+        border-radius: 50px  !important;
+        padding: 3vh !important;
+        margin: 3vh;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 767px) {
+    .container-foto {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3vh;
+    }
+
+    .foto {
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .col-lg-10 h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .col-lg-10 p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Exibe o primeiro parágrafo em telas pequenas */
+    .col-lg-10 p:first-of-type {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    /* Oculta o conteúdo extra até que seja expandido */
+    .hidden-content {
+        display: none;
+    }
+
+    /* Botão "Ler mais" visível apenas em telas pequenas */
+    .ler-mais {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        cursor: pointer;
+        color: blue;
+    }
+
+    /* Quando expandido, exibe o conteúdo adicional */
+    .hidden-content.show {
+        display: block;
+    }
+    .botao-about{
+        width: 40vh;
+        background-color: #acf464  !important;
+        border: 2px solid #3030309d  !important;
+        border-radius: 50px  !important;
+        padding: 3vh !important;
+    }
+}
