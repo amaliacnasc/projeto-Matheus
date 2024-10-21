@@ -6,7 +6,7 @@
 
 /* Estilos para telas grandes e médias */
 @media (min-width: 768px) {
-    .foto {
+    .foto-about {
         float: left;
         width: 40%;
         margin-right: 20px;
@@ -22,20 +22,19 @@
         text-align: justify;
     }
 
-    /* Esconde o botão "Ler mais" em telas grandes e médias */
     .ler-mais {
         display: none;
     }
 
-    /* Mostra o conteúdo completo */
     .hidden-content {
         display: block;
     }
-    .botao-about{
+
+    .botao-about {
         width: 50vh;
-        background-color: #acf464  !important;
-        border: 2px solid #3030309d  !important;
-        border-radius: 50px  !important;
+        background-color: #acf464 !important;
+        border: 2px solid #3030309d !important;
+        border-radius: 50px !important;
         padding: 3vh !important;
         margin: 3vh;
     }
@@ -49,7 +48,7 @@
         margin-bottom: 3vh;
     }
 
-    .foto {
+    .foto-about {
         height: 30vh;
         width: 30vh;
     }
@@ -64,7 +63,6 @@
         text-align: justify;
     }
 
-    /* Exibe o primeiro parágrafo em telas pequenas */
     .col-lg-10 p:first-of-type {
         display: block;
         overflow: hidden;
@@ -72,12 +70,10 @@
         text-overflow: ellipsis;
     }
 
-    /* Oculta o conteúdo extra até que seja expandido */
     .hidden-content {
         display: none;
     }
 
-    /* Botão "Ler mais" visível apenas em telas pequenas */
     .ler-mais {
         display: block;
         text-align: center;
@@ -86,15 +82,13 @@
         color: blue;
     }
 
-    /* Quando expandido, exibe o conteúdo adicional */
     .hidden-content.show {
         display: block;
     }
-    .botao-about{
+
+    .botao-about {
         width: 40vh;
-        background-color: #acf464  !important;
-        border: 2px solid #3030309d  !important;
-        border-radius: 50px  !important;
-        padding: 3vh !important;
-    }
-}
+        background-color: #acf464 !important;
+        border: 2px solid #3030309d !important;
+        border-radius: 50px !important;
+    }}

@@ -1,42 +1,45 @@
-.corpo-servicos{
+.corpo-servicos {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 5vh !important; /* Força a aplicação da margem */
+    margin-top: 5vh;
+    padding: 5vh;
 }
 
-.conteudo{
-    
+.conteudo {
+    width: 90vw; /* Usa unidades relativas para melhor adaptação */
+    max-width: 160vh;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
-    width: 160vh;
-    margin: 0 auto;
 }
-.titulo{
-    font-size: 5vh;
+
+.titulo {
+    font-size: 4vh; /* Fontes relativas para ajustar em diferentes telas */
     margin-top: 4vh;
     margin-bottom: 4vh;
     text-align: center;
 }
 
-
-.item{
+.item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2vh; /* Margem inferior entre os itens para espaçamento */
 }
+
 .titulo-item {
-    font-size: 3vh;
-    font-style: italic;
+    font-size: 2.5vh; /* Ajuste do tamanho para telas menores */
     display: flex;
     align-items: center;
-    justify-content:baseline; /* Adiciona espaço automático entre o texto e a seta */
-    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
+    justify-content: baseline;
+    cursor: pointer;
 }
 
 .titulo-item svg {
-    margin-left: 10px; /* Adiciona o espaçamento à esquerda da seta */
+    margin-left: 10px;
 }
-.texto-item{
+
+.texto-item {
     font-size: 2vh;
     text-align: justify;
 }
@@ -49,11 +52,30 @@
 }
 
 .texto-item-container.open {
-    max-height: 1000px; /* Um valor alto o suficiente para o conteúdo expandido */
+    max-height: 1000px;
     opacity: 1;
 }
 
 .texto-item-container.closed {
     max-height: 0;
     opacity: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conteudo {
+        width: 95vw; /* Ajusta a largura para quase toda a viewport em telas pequenas */
+    }
+
+    .titulo {
+        font-size: 6.5vh; /* Reduz o tamanho do título para telas pequenas */
+    }
+
+    .titulo-item {
+        font-size: 5.2vh  !important; /* Reduz o tamanho das legendas */
+    }
+
+    .texto-item {
+        font-size: 3.8vh !important; /* Reduz o texto para melhor legibilidade */
+    }
 }

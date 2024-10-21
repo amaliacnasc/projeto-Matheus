@@ -1,33 +1,36 @@
-.background{
+.background {
     background-color: #ffffff;
 }
 
-.fonte{
-    color: #303030; 
+.fonte {
+    color: #303030;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bolder;
 }
-.fonte:hover{
+
+.fonte:hover {
     color: #3030309d;
     text-decoration: underline;
 }
 
-.logo{
-    height: 10vh;
-    width: 10vh;
-    margin-left: 10vh;
-    margin-top: 5vh;
+.logo {
+    height: 15vh;
+    width: 15vh;
 }
 
-.display-f{
+.nav-links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 2rem; /* ajuste a distância entre os links conforme necessário */
 }
-.nav-links{
-    margin-top: 5vh;
-    display: flex;
-    gap: 5vh;
-    margin-right: 10vh;
+
+/* Estilo para telas pequenas */
+@media (max-width: 992px) { /* Para telas menores que 992px */
+    .nav-links {
+        flex-direction: column; /* Os links ficarão empilhados em telas menores */
+        margin-top: 1rem; /* Adicione um espaço acima dos links */
+    }
+    .fonte {
+        padding: 0.5rem 0; /* Adicione um padding para espaçar os links */
+    }
 }

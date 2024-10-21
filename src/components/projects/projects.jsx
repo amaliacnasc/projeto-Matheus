@@ -1,31 +1,37 @@
 import React, { useState } from 'react';
 import { Card, Image } from 'react-bootstrap';
 import './projects.css';
-import { FaArrowRight } from 'react-icons/fa'; // Importando ícone da seta
+import { FaArrowRight } from 'react-icons/fa'; // Ícone da seta
 
 import projeto1 from '../../assets/img/projeto1.avif';
 import projeto2 from '../../assets/img/projeto2.avif';
 import projeto3 from '../../assets/img/projeto3.avif';
 
+const projectData = [
+    {
+        src: projeto1,
+        alt: 'Imagem de projeto 1',
+        legend: 'Dr. Clayton Guimarães, Projeto de criação de marca e identidade visual'
+    },
+    {
+        src: projeto2,
+        alt: 'Imagem de projeto 2',
+        legend: 'Harmony Hues, Mobile | Banking'
+    },
+    {
+        src: projeto3,
+        alt: 'Construção de branding, Naming e Identidade de marca',
+        legend: 'Construção de branding, Naming e Identidade de marca'
+    }
+];
+
 export default function Projects() {
     return (
         <div className="corpo-projetos">
             <div className="projetos">
-                <ProjectCard 
-                    src={projeto1} 
-                    alt="Imagem de projeto 1" 
-                    legend="Dr. Clayton Guimarães, Projeto de criação de marca e identidade visual" 
-                />
-                <ProjectCard 
-                    src={projeto2} 
-                    alt="Imagem de projeto 2" 
-                    legend="Harmony Hues, Mobile | Banking" 
-                />
-                <ProjectCard 
-                    src={projeto3} 
-                    alt="Imagem de projeto 3" 
-                    legend="Construção de branding, Naming e Identidade de marca" 
-                />
+                {projectData.map((project, index) => (
+                    <ProjectCard key={index} {...project} />
+                ))}
             </div>
         </div>
     );

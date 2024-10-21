@@ -16,7 +16,7 @@ export default function About() {
                 <div className='col-lg-10 col-md-8 col-sm-4'>
                 <h2 className='text-center p-3 '>Sobre mim</h2>
                     <div className='container-foto'>
-                        <Image className='img-fluid foto' src={foto} alt='foto matheus'></Image>
+                        <Image className='img-fluid foto-about' src={foto} alt='foto matheus'></Image>
                     </div>
                 
                     <p>Olá, eu sou o Matheus mas pode me chamar de Theus. Sou um Designer apaixonado, formado e pós-graduado na área.</p>
