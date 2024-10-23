@@ -25,7 +25,7 @@ const Servicos = () => {
     ];
 
     return (
-        <div className="corpo-servicos">
+        <div className="corpo-servicos container">
             <h2 className="titulo">O que você encontra aqui?</h2>
             <div className="conteudo col-lg-10">
                 {servicesData.map(service => (

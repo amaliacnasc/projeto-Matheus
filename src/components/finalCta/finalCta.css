@@ -3,3 +3,12 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+.botao {
+    width: 60%;
+    max-width: 300px;
+    background-color: #acf464 !important;
+    border: 2px solid #3030309d !important;
+    border-radius: 50px !important;
+    padding: 1.5vh !important;
+}

@@ -1,94 +1,89 @@
-.container {
-    width: 80%;
+/* Estrutura básica da seção */
+.about-section {
+    padding: 50px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
     margin: 0 auto;
-    margin-top: 50px;
-}
-
-/* Estilos para telas grandes e médias */
-@media (min-width: 768px) {
-    .foto-about {
-        float: left;
-        width: 40%;
-        margin-right: 20px;
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Foto responsiva */
+  .about-photo {
+    margin-bottom: 20px;
+  }
+  
+  .about-photo img {
+    border-radius: 5%;
+    max-width: 45vh;
+    width: 100%;
+    height: auto;
+    margin-right: 5vh;
+  }
+  
+  /* Texto */
+  .about-text p {
+    font-size: 2.5vh !important;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  
+  /* Responsividade para telas maiores */
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      text-align: left;
     }
-
-    .col-lg-10 h2 {
-        font-size: 2.5rem;
-        text-align: left;
+  
+    .about-photo {
+      margin-right: 20px;
     }
-
-    .col-lg-10 p {
-        font-size: 1.2rem;
-        text-align: justify;
+  
+    .about-text {
+      flex: 1;
     }
-
-    .ler-mais {
-        display: none;
+  
+    .about-text p {
+      font-size: 1.1rem;
     }
-
-    .hidden-content {
-        display: block;
+  }
+  
+  /* Botão de "Ler mais/menos" */
+  .toggle-button {
+    background-color: transparent;
+    border: none;
+    color: #668447;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 10px 0;
+    text-decoration: underline;
+  }
+  
+  /* Conteúdo extra oculto por padrão */
+  .extra-content {
+    display: none;
+  }
+  
+  .extra-content.show {
+    display: block;
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 767px) {
+    .about-text p {
+      font-size: 1rem;
     }
-
-    .botao-about {
-        width: 50vh;
-        background-color: #acf464 !important;
-        border: 2px solid #3030309d !important;
-        border-radius: 50px !important;
-        padding: 3vh !important;
-        margin: 3vh;
+  
+    .about-photo img {
+      max-width: 150px;
     }
-}
-
-/* Estilos para telas pequenas */
-@media (max-width: 767px) {
-    .container-foto {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 3vh;
-    }
-
-    .foto-about {
-        height: 30vh;
-        width: 30vh;
-    }
-
-    .col-lg-10 h2 {
-        font-size: 1.5rem;
-        text-align: center;
-    }
-
-    .col-lg-10 p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .col-lg-10 p:first-of-type {
-        display: block;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    .hidden-content {
-        display: none;
-    }
-
-    .ler-mais {
-        display: block;
-        text-align: center;
-        margin-top: 10px;
-        cursor: pointer;
-        color: blue;
-    }
-
-    .hidden-content.show {
-        display: block;
-    }
-
-    .botao-about {
-        width: 40vh;
-        background-color: #acf464 !important;
-        border: 2px solid #3030309d !important;
-        border-radius: 50px !important;
-    }}
+  }
+  
