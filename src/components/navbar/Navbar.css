@@ -1,5 +1,6 @@
 .background {
-    background-color: #ffffff;
+    background-color: #101010;
+    
 }
 
 .fonte {
@@ -15,22 +16,49 @@
 }
 
 .logo {
-    height: 15vh;
+    height: 5vh;
+    width: 5vh;
+}
+.botao-agenda {
     width: 15vh;
-}
-
-.nav-links {
+    height: 3vh;
+    padding: 0; /* Remover padding para não deslocar o texto */
+    background-color: #262626 !important;
+    border-radius: 50px !important;
+    border: 1px solid #3D3D3D!important;
+    
     display: flex;
-    gap: 2rem; /* ajuste a distância entre os links conforme necessário */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Estilo para telas pequenas */
-@media (max-width: 992px) { /* Para telas menores que 992px */
-    .nav-links {
-        flex-direction: column; /* Os links ficarão empilhados em telas menores */
-        margin-top: 1rem; /* Adicione um espaço acima dos links */
-    }
-    .fonte {
-        padding: 0.5rem 0; /* Adicione um padding para espaçar os links */
-    }
+.agenda-fonte {
+    font-size: 1.4vh;
+    margin: 0; /* Remover todas as margens */
+    line-height: 1; /* Ajustar altura da linha */
 }
+
+.botao-agenda .agenda-content {
+    display: flex;
+    align-items: center; /* Alinha o ponto e o texto verticalmente */
+    gap: 8px; /* Espaço entre o ponto e o texto */
+  }
+  .sparkle-dot {
+    width: 4px; /* Tamanho do ponto reduzido */
+    height: 4px;
+    background-color:#AAEA6A; /* Cor verde */
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 255, 0, 0.8), 0 0 8px rgba(0, 255, 0, 0.5); /* Reduz o efeito de brilho */
+    animation: sparkle 1.5s infinite ease-in-out;
+  }
+  
+  @keyframes sparkle {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+    50% {
+      transform: scale(1.2); /* Menor aumento para o efeito de piscar */
+      opacity: 1;
+    }
+  }
