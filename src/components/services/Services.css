@@ -1,18 +1,3 @@
-.corpo-servicos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5vh;
-    padding: 5vh;
-}
-
-.conteudo {
-    width: 90vw; /* Usa unidades relativas para melhor adaptação */
-    max-width: 160vh;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
 
 .titulo {
     font-size: 4vh; /* Fontes relativas para ajustar em diferentes telas */
@@ -22,9 +7,15 @@
 }
 
 .item {
+   
+    background-color: #AFF26D;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2vh; /* Margem inferior entre os itens para espaçamento */
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    padding: 0;
+    width: 100%; /* Faz o background verde preencher o espaço */
 }
 
 .titulo-item {
@@ -59,23 +50,4 @@
 .texto-item-container.closed {
     max-height: 0;
     opacity: 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .conteudo {
-        width: 95vw; /* Ajusta a largura para quase toda a viewport em telas pequenas */
-    }
-
-    .titulo {
-        font-size: 6.5vh; /* Reduz o tamanho do título para telas pequenas */
-    }
-
-    .titulo-item {
-        font-size: 5.2vh  !important; /* Reduz o tamanho das legendas */
-    }
-
-    .texto-item {
-        font-size: 3.8vh !important; /* Reduz o texto para melhor legibilidade */
-    }
 }

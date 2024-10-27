@@ -21,13 +21,13 @@ const NavbarComponent = () => {
         </Navbar.Brand>
 
         <Nav.Link className='fonte' onClick={handleWhatsAppClick}>
-          <Button className='botao-agenda'>
-            <div className="agenda-content">
-              <SparkleDot />
-              <span className='agenda-fonte'>Agenda Aberta</span>
-            </div>
-          </Button>
-        </Nav.Link>
+  <Button className='botao-agenda'>
+    <div className="agenda-content">
+      <SparkleDot />
+      <span className='agenda-fonte'>Agenda Aberta</span>
+    </div>
+  </Button>
+</Nav.Link>
       </Container>
     </Navbar>
   );

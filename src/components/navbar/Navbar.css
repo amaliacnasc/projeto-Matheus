@@ -19,33 +19,32 @@
     height: 5vh;
     width: 5vh;
 }
+/* Navbar.css */
 .botao-agenda {
-    width: 15vh;
-    height: 3vh;
-    padding: 0; /* Remover padding para não deslocar o texto */
-    background-color: #262626 !important;
-    border-radius: 50px !important;
-    border: 1px solid #3D3D3D!important;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px 4px 4px 4px !important;
+  background-color: #333 !important;
+  border: none !important;
+  border-radius: 20px !important;
+  width: 17vh;
+}
+
+.agenda-content {
+  display: flex;
+  align-items: center;
 }
 
 .agenda-fonte {
-    font-size: 1.4vh;
-    margin: 0; /* Remover todas as margens */
-    line-height: 1; /* Ajustar altura da linha */
+  margin-left:4px !important; /* Ajusta a posição do texto em relação ao ponto */
+  color: white ;
+  font-size: 8px;
 }
-
-.botao-agenda .agenda-content {
-    display: flex;
-    align-items: center; /* Alinha o ponto e o texto verticalmente */
-    gap: 8px; /* Espaço entre o ponto e o texto */
-  }
   .sparkle-dot {
     width: 4px; /* Tamanho do ponto reduzido */
     height: 4px;
+    margin-left: 16px;
     background-color:#AAEA6A; /* Cor verde */
     border-radius: 50%;
     box-shadow: 0 0 4px rgba(0, 255, 0, 0.8), 0 0 8px rgba(0, 255, 0, 0.5); /* Reduz o efeito de brilho */
