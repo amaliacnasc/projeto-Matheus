@@ -12,11 +12,11 @@ export default function FinalCTA() {
     };
 
     return (
-        <div className='container'>
+        <div className='container background-finalcta mt-5'>
             <div className='row'>
-                <h2 className='text-center'>Vamos juntos criar um novo case de sucesso!</h2>
+                <h2 className='text-center fonte-finalcta'>Vamos traduzir a essência da sua marca em algo único, que se destaque e a transforme em um case de sucesso!</h2>
                 <div className='center-botao mt-3'>
-                    <Button className='botao' onClick={handleWhatsAppClick}>Solicite um orçamento</Button>
+                    <Button className='botao' onClick={handleWhatsAppClick}>Preciso de uma marca única!</Button>
                 </div>
             </div>
         </div>

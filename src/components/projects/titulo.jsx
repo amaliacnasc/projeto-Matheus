@@ -1,9 +1,37 @@
-import React from 'react'; 
-import './projects.css'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons'; 
+import './projects.css';
 
 export default function Titulo(){
+    let verMaisClick = () => {
+            
+        let portfolioUrl = `https://www.behance.net/theushmdesign`;
+    
+        window.open(portfolioUrl, '_blank'); // Abre o link em uma nova aba
+      };
     return(
+<div className=' container-titulo-portfolio'>
+         
+            
+            <div className=' container-titulo'>
+     
+                <div className='container-botao-portfolio'>
+                <h2 className='titulo-portfolio'>Portfolio</h2>
+                <div className='btn-portfolio'>
+                    <p className='fonte-ver-mais '>Ver mais</p>
+                    <button className='botao-portfolio'onClick={verMaisClick}>
+                        <FontAwesomeIcon className='seta-portfolio' icon={faArrowUpLong} />
+                        {' '}
 
-        <h2 className=' mt-3 text-center'><a className=' portfolio' href='https://www.behance.net/theushmdesign'>Portfolio</a></h2>
-    )
+                    </button>
+
+                </div>
+                </div>
+                <div class="linha-portfolio"></div>
+            </div>
+           
+            </div>)
+            
+      
 }

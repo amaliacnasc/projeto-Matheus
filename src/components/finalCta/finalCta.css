@@ -7,8 +7,27 @@ justify-content: center;
 .botao {
     width: 60%;
     max-width: 300px;
-    background-color: #acf464 !important;
-    border: 2px solid #3030309d !important;
+    background-color: #101010 !important;
+    border: 2px solid #ffffff !important;
     border-radius: 50px !important;
     padding: 1.5vh !important;
+    font-family:'Glancyr Neue'; ;
+}
+
+.fonte-finalcta{
+    font-family: 'Glancyr Neue';
+    font-size: 2em;
+}
+.background-finalcta{
+
+    margin-bottom: 5vh;
+    background-color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Glancyr Neue';
+    src: url('../../assets/fonts/glancyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }

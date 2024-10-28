@@ -7,22 +7,35 @@
     gap: 0; /* Remove qualquer espaço extra entre os elementos */
 }
 
-.foto {
-    height: 65vh !important;
-    width: 100% !important; /* Garante que a imagem ocupe toda a largura disponível */
-    border-radius: 10px 0 0 10px;
-}
 
 .background-preto {
-    height: 65vh;
+    height: 58vh;
     background-color: #101010;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-items: center;
     border-radius: 0 10px 10px 0;
     padding: 0;
     width: 100%; /* Faz o background verde preencher o espaço */
+}
+
+.foto-main-container{
+    position: relative;
+    top: -70px; /* Ajuste este valor para que a imagem "suba" para a navbar */
+    z-index: 1; /* Certifica-se de que a imagem fique atrás da navbar */
+    height: 75vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top; /* Foca na parte superior da imagem */
+   
+}
+.container-texto{
+    display: flex;
+    flex-direction: column;
+   margin-left: 5vh;
+   color: #FFFFFF;
+   font-family: 'Glancyr Neue';;
 }
 
 @font-face {
@@ -43,11 +56,12 @@
 }
 
 .fonte-descricao {
-    text-align: left; /* Alinhamento centralizado */
-    font-family: 'Glancyr Neue', sans-serif;
+    text-align: left; /* Alinhamento centralizado */ 
+    font-family: 'Glancyr Neue', sans-serif ;
     color: #FFFFFF;
     font-weight: lighter; /* Corrigido para não usar aspas */
     margin-bottom: 15vh;
+    margin-left: 2vh;
 }
 
 .main-container {
@@ -61,6 +75,7 @@
     gap: 10vh;
     justify-content: center;
     width: 100%;
+
 }
 
 .nav-button {
@@ -68,6 +83,7 @@
     padding: 10px 20px;
     font-weight: bold;
     font-size: 16px;
+
 }
 
 .nav-button-servicos{
@@ -75,12 +91,14 @@
     color: #101010 !important;
     border-radius: 20px !important;
     padding: 5px 20px !important;
+    width: 20vh !important;
 }
 .nav-button-orcamentos{
     background-color: #AFF26D !important;
     color: #101010 !important;
     border-radius: 20px !important;
     padding: 5px 20px !important;
+    width: 20vh !important;
 }
 
 .nav-button-sobre{
@@ -88,4 +106,68 @@
     color:#FFFFFF !important;
     border-radius: 20px !important;
     padding: 5px 20px !important;
+    width: 20vh !important;
+}
+
+/* Media query para telas médias (768px a 1024px) */
+@media (max-width: 1024px) {
+    .corpo {
+        flex-direction: column; /* Muda para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .container-texto {
+        margin-left: 0; /* Remove a margem esquerda */
+        text-align: center; /* Alinha o texto ao centro */
+        margin-bottom: 20px; /* Adiciona um espaço abaixo do texto */
+        color: #FFFFFF;
+         font-family: 'Glancyr Neue';
+    }
+
+    .foto-main-container {
+        height: 50vh; /* Ajusta a altura da imagem */
+    }
+
+    .fonte-titulo {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte do título */
+    }
+
+    .fonte-descricao {
+        margin-bottom: 10vh; /* Ajusta a margem inferior */
+    }
+
+    .button-container {
+        flex-direction: row !important; /* Coloca os botões em coluna */
+        gap: 5vh !important; /* Espaço entre os botões */
+        bottom: -40px !important; /* Ajusta a posição dos botões */
+      
+    }
+}
+
+/* Media query para telas pequenas (até 768px) */
+@media (max-width: 768px) {
+    
+
+    .foto-main-container {
+        display: none;
+    }
+
+    .fonte-titulo {
+        font-size: 2rem; /* Reduz ainda mais o tamanho da fonte do título */
+    }
+
+    .fonte-descricao {
+        font-size: 0.9rem; /* Ajusta o tamanho da fonte da descrição */
+        margin-bottom: 5vh; /* Ajusta a margem inferior */
+    }
+
+    .nav-button {
+        width: 80% !important; /* Faz os botões ocuparem 80% da largura */
+        padding: 10px !important; /* Ajusta o padding dos botões */
+        font-size: 14px !important; /* Reduz o tamanho da fonte dos botões */
+    }
+
+    .button-container {  
+        margin-bottom: 7vh;   
+    }
 }

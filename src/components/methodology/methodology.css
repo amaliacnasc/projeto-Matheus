@@ -28,6 +28,7 @@ color: #ffffff;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    height: 100%
 }
 .container-botao{
     display: flex;
@@ -48,5 +49,13 @@ color: #ffffff;
     src: url('../../assets/fonts/glancyr.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+
+}
+
+.div-caminho{
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+
 
 }

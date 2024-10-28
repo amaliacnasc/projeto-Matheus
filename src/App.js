@@ -13,13 +13,13 @@ import Methodology from './components/methodology/Methodology'
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
+    
       <MainContainer></MainContainer>
       <Titulo></Titulo>
       <Projects></Projects>
       <Servicos></Servicos>
       <Methodology></Methodology>
-     
+      <FinalCTA></FinalCTA>
       <Rodape></Rodape>
     </div>
   );
