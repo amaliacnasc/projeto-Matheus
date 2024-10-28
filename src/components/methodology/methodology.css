@@ -1,0 +1,52 @@
+.container-metodologia{
+    background-color: #101010;
+    height: 50vh;
+}
+.titulo-metodologia{
+font-family: 'Glancyr Neue';
+font-size: 3.5rem;
+color: #ffffff;
+}
+
+.fonte-ver-mais{
+    font-family: 'Glancyr Neue';
+}
+
+.botao-metodologia{
+    width: 10vh;
+    height: 5vh;
+    border-radius: 20px 
+}
+.seta{
+    color: #101010;
+    transform: rotate(45deg); /* Altere o ângulo conforme necessário */
+  display: inline-block; /* Necessário para que a rotação funcione corretamente */
+}
+.container-metodologia{
+    display: grid;
+    grid-template-columns:  6fr 1fr; /* Número, título e ícone */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.container-botao{
+    display: flex;
+    align-content: normal;
+    gap:2px;
+    justify-content: space-evenly;
+    align-items: baseline;
+    cursor: pointer;
+}
+.linha-metodologia{
+    width: 100%;  /* comprimento da linha */
+    height: 1px;  /* espessura da linha */
+    background-color: #ffffff ; /* cor da linha */
+    opacity: 20%;
+}
+@font-face {
+    font-family: 'Glancyr Neue';
+    src: url('../../assets/fonts/glancyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

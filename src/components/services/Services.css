@@ -1,38 +1,37 @@
 
-.titulo {
-    font-size: 4vh; /* Fontes relativas para ajustar em diferentes telas */
-    margin-top: 4vh;
-    margin-bottom: 4vh;
-    text-align: center;
+
+@font-face {
+    font-family: 'Glancyr Neue';
+    src: url('../../assets//fonts/glancyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.item {
+
+    background-color: #AFF26D;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
 }
 
-.item {
-   
-    background-color: #AFF26D;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.group-item {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr; /* Número, título e ícone */
     align-items: center;
-    border-radius: 0 10px 10px 0;
-    padding: 0;
-    width: 100%; /* Faz o background verde preencher o espaço */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.number {
+    text-align: left;
 }
 
 .titulo-item {
-    font-size: 2.5vh; /* Ajuste do tamanho para telas menores */
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
+    font-size: 5.5vh; /* Ajuste conforme necessário */
     cursor: pointer;
-}
-
-.titulo-item svg {
-    margin-left: 10px;
-}
-
-.texto-item {
-    font-size: 2vh;
-    text-align: justify;
+    font-family:'Glancyr Neue';
 }
 
 .texto-item-container {
@@ -51,3 +50,10 @@
     max-height: 0;
     opacity: 0;
 }
+.linha {
+    width: 100%;  /* comprimento da linha */
+    height: 1px;  /* espessura da linha */
+    background-color: black ; /* cor da linha */
+    opacity: 20%;
+
+  }

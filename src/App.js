@@ -8,7 +8,7 @@ import About from './components/about/About';
 import FinalCTA from './components/finalCta/FinalCTA';
 import Rodape from './components/footer/rodape';
 import Titulo from './components/projects/titulo'
-
+import Methodology from './components/methodology/Methodology'
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <Titulo></Titulo>
       <Projects></Projects>
       <Servicos></Servicos>
-      <About></About>
-      <FinalCTA></FinalCTA>
+      <Methodology></Methodology>
+     
       <Rodape></Rodape>
     </div>
   );
