@@ -26,7 +26,9 @@ const Servicos = () => {
 
     return (
         <div>
-          
+          <div className='container-servicos'>
+
+         
             <div >
                 {servicesData.map(service => (
                     <ServiceItem 
@@ -39,6 +41,7 @@ const Servicos = () => {
                         toggleItem={toggleItem}
                     />
                 ))}
+            </div>
             </div>
         </div>
     );
@@ -53,9 +56,10 @@ const ServiceItem = ({ id, number, title, description, isOpen, toggleItem }) => 
             {title}
         </p>
         <p className='titulo-item'  onClick={() => toggleItem(id)}> <FontAwesomeIcon icon={isOpen ? faArrowUp : faArrowDown} /></p>
-        <div className={`texto-item-container ${isOpen ? 'open' : 'closed'}`}>
-            <p className="texto-item">{description}</p>
+       
         </div>
+        <div className={`texto-item-container ${isOpen ? 'open' : 'closed'}`}>
+            <p className="texto-item col-lg-12">{description}</p>
         </div>
         <div class="linha"></div>
     </div>

@@ -18,9 +18,9 @@ export default function Titulo(){
      
                 <div className='container-botao-portfolio'>
                 <h2 className='titulo-portfolio'>Portfolio</h2>
-                <div className='btn-portfolio'>
-                    <p className='fonte-ver-mais '>Ver mais</p>
-                    <button className='botao-portfolio'onClick={verMaisClick}>
+                <div className='btn-portfolio' onClick={verMaisClick}>
+                    <p className='fonte-ver-mais  ' >Ver mais</p>
+                    <button className='botao-portfolio'>
                         <FontAwesomeIcon className='seta-portfolio' icon={faArrowUpLong} />
                         {' '}
 

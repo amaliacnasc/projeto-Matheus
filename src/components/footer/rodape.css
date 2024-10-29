@@ -3,75 +3,47 @@
     background-color: #1a1a1a; /* Cor de fundo escura */
     color: #ffffff; /* Texto branco */
     padding: 40px 0; /* Espaçamento superior e inferior */
-    text-align: center;
-}
-
-/* Estilo para os ícones sociais e links */
-.footer-link {
-    color: #ffffff; /* Cor branca para os links */
-    background-color: transparent;
-    text-decoration: none; /* Remover sublinhado */
-    margin: 0 15px;
-    font-size: 18px;
-    border: none;
-    transition: color 0.3s ease; /* Transição suave */
-}
-
-.footer-link:hover {
-    color: #1db954; /* Mudar para verde ao passar o mouse */
-}
-
-/* Estilos para o botão do WhatsApp */
-.footer-button {
-    background-color: transparent;
-    color: #1db954; /* Cor verde para o botão do WhatsApp */
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.footer-button:hover {
-    color: #ffffff; /* Fica branco ao passar o mouse */
-}
-
-/* Layout geral */
-.container {
-    max-width: 1200px;
-    margin: 0 auto; /* Centralizar conteúdo */
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    flex: 1 1 100%; /* Flexível para ocupar a largura total */
-    margin-bottom: 20px;
-}
-
-.col-lg-4 {
     text-align: left;
 }
 
-.col-lg-10 {
-    text-align: center;
+.logotipo{
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-    .footer-col {
-        flex: 1; /* Ocupar uma coluna cada */
-        margin-bottom: 0;
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.3s;
+}
+p{
+    font-family: 'Glancyr Neue';
+}
+@font-face {
+    font-family: 'Glancyr Neue';
+    src: url('../../assets//fonts/glancyr.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+    .logotipo {
+        justify-content: flex-start; /* Alinha o logotipo à esquerda */
+        margin-bottom: 20px; /* Espaçamento inferior para separar do conteúdo abaixo */
     }
 
-    .col-lg-4 {
-        text-align: left; /* Texto à esquerda em telas maiores */
+    .logotipo img {
+        width: 80%; /* Diminui o tamanho do logotipo */
+        height: auto; /* Mantém a proporção do logotipo */
+    }
+    
+    .footer {
+        padding: 20px 10px; /* Ajusta o espaçamento do rodapé em telas pequenas */
     }
 
-    .col-lg-10 {
-        text-align: right; /* Texto à direita em telas maiores */
+    p {
+        font-size: 14px; /* Ajusta o tamanho da fonte se necessário */
     }
 }

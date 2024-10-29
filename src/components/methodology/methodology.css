@@ -1,10 +1,7 @@
-.container-metodologia{
-    background-color: #101010;
-    height: 50vh;
-}
+
 .titulo-metodologia{
 font-family: 'Glancyr Neue';
-font-size: 3.5rem;
+font-size: 3em;
 color: #ffffff;
 }
 
@@ -23,12 +20,13 @@ color: #ffffff;
   display: inline-block; /* Necessário para que a rotação funcione corretamente */
 }
 .container-metodologia{
-    display: grid;
-    grid-template-columns:  6fr 1fr; /* Número, título e ícone */
+    background-color: #101010;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    height: 100%
+    padding: 2vh;
+ 
 }
 .container-botao{
     display: flex;
@@ -58,4 +56,29 @@ color: #ffffff;
     height: 100%;
 
 
+}
+
+.div-caminho{
+    margin-bottom: 20vh;
+}
+
+/* Para telas médias (tablet) */
+@media (max-width: 768px) {
+    .div-caminho {
+        background-size: contain; /* Ajusta o tamanho da imagem, se for um background */
+        height: 50%; /* Diminui a altura da seção */
+    }
+
+    /* Se a imagem for um elemento <img> dentro da seção */
+    .div-caminho img {
+        width: 50%; /* Ajusta o tamanho da imagem */
+        height: auto;
+    }
+}
+
+/* Para telas pequenas (smartphone) */
+@media (max-width: 480px) {
+    .div-caminho {
+        display: none; /* Oculta a seção */
+    }
 }

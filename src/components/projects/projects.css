@@ -76,6 +76,7 @@
     color: #000; /* Ajuste a cor conforme desejado */
     margin-right: 10px;
     font-family: 'Glancyr Neue';
+    cursor: pointer !important;
 }
 
 .botao-portfolio {
